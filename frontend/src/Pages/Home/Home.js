@@ -8,10 +8,10 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div className='home container'>
+    
   
-  <div  class="img" ></div>
-  <div class="center">
+ <div className=''>
+  <div  class="text-bg-dark p-3">
     <div class="title">ABC INSTITUTE</div>
     <div class="sub_title">All the details about programs and Students</div>
     <div class="btns">
@@ -23,8 +23,9 @@ export default function Home() {
       </Link>
     </div>
   </div>
+  </div>
       
      
-    </div>
+    
   )
 }

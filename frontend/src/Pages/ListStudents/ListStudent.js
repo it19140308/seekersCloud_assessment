@@ -9,7 +9,8 @@ import { Link, json, useNavigate } from "react-router-dom";
 export default function ListStudent() {
 
     const[data, setPrograms] =useState([]);
-    const[records,setRecords]=useState([])
+    const[records,setRecords]=useState([]);
+    const [items, setItems] = useState([]);
 
     const navigate =useNavigate();
   
@@ -22,6 +23,12 @@ export default function ListStudent() {
       programe:''
       
     })
+    const Updating = (_id) => {
+      console.log(_id);
+      setItems(_id);
+        localStorage.setItem("ID", _id);
+        window.location='/student/update/id'
+  }
   
   
     useEffect(()=>{
@@ -73,9 +80,9 @@ export default function ListStudent() {
     </tr>
   </thead>
   <tbody>
-  {records.map((names,id)=>
+  {records.map((names,_id)=>
                            
-                           <tr key={id} >
+                           <tr key={_id} >
 
                               {console.log("kasun",names._id)}
                                
@@ -87,7 +94,7 @@ export default function ListStudent() {
                               
                              <td>
                              
-                              <Link className="btn btn-primary" to ={'/programe/update/id'}>Update</Link>
+                              <Link className="btn btn-primary" onClick={() => Updating(names._id)}>Update</Link>
                               
                                 <>    </>
                                 <button className="btn btn-primary" onClick={(e)=>{

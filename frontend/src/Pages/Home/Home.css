@@ -1,19 +1,14 @@
-*{
+.container{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
-   
+    background-image: url('/public/images/123.jpg');
+
   
   }
-
-
   
-
- 
-  
-
-  .center{
+  .text-bg-dark{
     position: absolute;
     top: 52%;
     left: 50%;
@@ -22,20 +17,20 @@
     padding: 0 20px;
     text-align: center;
   }
-  .center .title{
+  .text-bg-dark .title{
     color: #e0d8d8;
     font-size: 55px;
     font-weight: 600;
   }
-  .center .sub_title{
-    color: #0d0c0c;
+  .text-bg-dark .sub_title{
+    color: #a19d9d;
     font-size: 52px;
     font-weight: 600;
   }
-  .center .btns{
+  .text-bg-dark .btns{
     margin-top: 20px;
   }
-  .center .btns button{
+  .text-bg-dark .btns button{
     height: 55px;
     width: 170px;
     border-radius: 5px;

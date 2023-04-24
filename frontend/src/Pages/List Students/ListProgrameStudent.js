@@ -43,9 +43,7 @@ export default function ListProgrameStudent() {
                               <td>{names.contact}</td>
 
                               <td>
-                              <Link to ={`/programe/update/${names.id}`}>
-                              <button class="btn btn-primary" >Update</button>
-                              </Link>
+                             
                                 <>    </>
                                 <button class="btn btn-primary" onClick={(e)=>{
                                       handleSubmit(names._id);

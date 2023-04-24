@@ -7,6 +7,7 @@ import CreateStudent from "./Pages/CreateStudent/CreateStudent";
 import ListProgrameStudent from "./Pages/List Students/ListProgrameStudent";
 import UpdatePrograme from  "./Pages/UpdatePrograme/UpdatePrograme";
 import ListStudent from "./Pages/ListStudents/ListStudent";
+import UpdateStudent from "./Pages/Update Student/UpdateStudent";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       <Route path="/programe/" Component={ListPrograme}></Route>
       <Route path="/Student/add" Component={CreateStudent}></Route>
       <Route path="/programe/Students" Component={ListProgrameStudent}></Route>
-      <Route path="/programe/update/id" Component={UpdatePrograme}></Route>
+      <Route path="/programe/update/:id" Component={UpdatePrograme}></Route>
+      <Route path="/Student/update/:id" Component={UpdateStudent}></Route>
       <Route path="/Student/" Component={ListStudent}></Route>
    
      

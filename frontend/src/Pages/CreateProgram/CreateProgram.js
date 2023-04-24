@@ -29,9 +29,9 @@ export default function CreateProgram() {
     }
 
   return ( 
-   <div class="p-3 mb-2 bg-primary-subtle text-emphasis-primary">
+   <div class="formbox">
     <Navbar/>
-   <div className='formbox'>
+   <div className="p-3 mb-2 bg-primary-subtle text-emphasis-primary">
     
     <form className='formcontainer' onSubmit={sendData}>
     <div class="mb-3">
